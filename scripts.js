@@ -20,7 +20,7 @@ class perBuku extends HTMLElement{
     this.innerHTML = `
     <style>
     #wrapper {
-      margin-left:10px;
+      margin-left:30px;
       border:hide;
       width: 630px;
       height:400px;
