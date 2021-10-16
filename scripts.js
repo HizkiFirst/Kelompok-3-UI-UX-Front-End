@@ -211,7 +211,7 @@ class perBuku extends HTMLElement{
             <p id="rate">Rate: ${buku.bintang} ${buku.rate}</p>
           </div>
           <div id="buttonbuy">
-            <button type="button" class="button button1" onclick="beli()">Rp.${buku.harga} - Buy Now</button>
+            <button type="button" class="button button1">Rp.${buku.harga} - Buy Now</button>
           </div>
         </div>        
       </div>
@@ -233,9 +233,7 @@ function hideDesc(judulbuku) {
     btnDeskripsi.innerHTML= "Show Description"
     }
 } 
-function beli(){
-    alert("Buku berhasil dimasukkan ke keranjang!");
-}
+
 //List Buku
 class catBuku extends HTMLElement{
   constructor(){
@@ -575,9 +573,9 @@ async function mOut(ket) {
   `;
 }
 
-document.getElementById("ft-title").onclick = function() {myFunction()};
+document.getElementById("ft-title").onclick = function() {anggotaD()};
 
-function myFunction() {
+function anggotaD() {
   document.getElementById("ft-title").innerHTML = `
             <h3>Kelompok 3 UI/UX & Front-End</h3>
             <div id="anggota">
