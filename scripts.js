@@ -221,6 +221,19 @@ class perBuku extends HTMLElement{
     
 }
 
+function hideDesc(judulbuku) {
+  const deskripsi = document.getElementById("desc-"+judulbuku)
+  const btnDeskripsi = document.getElementById("btn-desc-"+judulbuku)
+
+  if(deskripsi.style.display === "none"){
+    deskripsi.style.display = "block"
+    btnDeskripsi.innerHTML = "Hide Description"
+    }else{
+    deskripsi.style.display = "none"
+    btnDeskripsi.innerHTML= "Show Description"
+    }
+} 
+
 //List Buku
 class catBuku extends HTMLElement{
   constructor(){
