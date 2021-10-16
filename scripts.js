@@ -575,7 +575,7 @@ async function mOut(ket) {
 
 document.getElementById("ft-title").onclick = function() {anggotaD()};
 
-function anggotaD() {
+async function anggotaD() {
   document.getElementById("ft-title").innerHTML = `
             <h3>Kelompok 3 UI/UX & Front-End</h3>
             <div id="anggota">
